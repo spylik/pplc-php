@@ -9,7 +9,7 @@ For every input search patterns, script can calculate:
 * The mean (average), median and mode of the response time (connect time + service time).
 * The "dyno" that responded the most.
 
-Futures
+Features
 ---
 1. pplc-php support different log files formats.
 
