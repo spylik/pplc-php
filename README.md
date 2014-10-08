@@ -11,6 +11,7 @@ For every input search patterns, script can calculate:
 
 Example of output:
 
+```
 -------------------------------------
 Report generated: 2014-10-08 05:20:47
 -------------------------------------
@@ -32,4 +33,4 @@ matched: 2036 times, average response time: 82.453831041257ms, median of respons
 
 Pattern "GET /api/users/{user_id}"
 matched: 6293 times, average response time: 96.707611631972ms, median of response time: 936ms, mode of reponse time: 11ms, the most responded dyno: web.13
-
+```
