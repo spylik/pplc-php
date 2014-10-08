@@ -16,7 +16,7 @@ pplc-php works slowly and may have problems with huge log files.
 
 How to run
 ---
-`php createReport.php`
+`php createReport.php` will generate report.txt in current directory. sample.log may present in same folder.
 
 Features
 ---
@@ -38,7 +38,7 @@ $SearchPatterns = array(
 );
 ```
 
-3. Output and input files can difines in createReport.php file.
+3. Input log file and output report file can be difined in createReport.php file.
 `$PPLCParser->AnalyseLogFile("sample.log",$SearchPatterns,"report.txt");`
 
 Example of output:
