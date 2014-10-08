@@ -12,6 +12,6 @@ $SearchPatterns = array(
 );
 
 require_once("class_PPLCParser.php");
-$PPLCParser = new PPLCParser();
+$PPLCParser = new PPLCParser($logformat);
 
 $PPLCParser->AnalyseLogFile("sample.log",$SearchPatterns,"report.txt");

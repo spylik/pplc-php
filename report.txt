@@ -1,5 +1,5 @@
 -------------------------------------
-Report generated: 2014-10-08 06:08:47
+Report generated: 2014-10-08 06:27:13
 -------------------------------------
 
 Pattern "GET /api/users/{user_id}/count_pending_messages"

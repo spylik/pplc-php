@@ -65,6 +65,11 @@ Class PPLCParser {
 	// function setLogFormat
     private function setLogFormat($logFormat)
 	{
+		$pattern[] = "/\[/";
+		$replacement[] = "\\[";
+		$pattern[] = "/\]/";
+		$replacement[] = "\\]";
+		$logFormat = preg_replace($pattern, $replacement, $logFormat);
 		$this->pcreFormat = "#^{$logFormat}$#";
         foreach ($this->LogFilePatterns as $pattern => $replace) {
             $this->pcreFormat = preg_replace("/{$pattern}/", $replace, $this->pcreFormat);
