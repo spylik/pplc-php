@@ -117,8 +117,13 @@ Class PPLCParser {
 					$string=$string."Pattern \"".$this->LookingFor[$key]."\"\nmatched: ".$counted[$key]['requests']." times, average response time: ".$counted[$key]['avgOfResponseTime']."ms, median of response time: ".$counted[$key]['medianOfResponseTime']."ms, mode of reponse time: ".$counted[$key]['modeOfResponseTime']."ms, the most responded dyno: ".key($counted[$key]['responding_dyno'])."\n\n";
 				}
 			}
-			print_r ($string);
 			fclose($handle);
+			print_r ($string);
+			if($outputfile!=null and $outputfile!=""){
+				$fp = fopen($outputfile, 'w');
+				fwrite($fp, $string);
+				fclose($fp);
+			}
 		}
 	}
 	// end of function AnalyseLogFile

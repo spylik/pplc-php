@@ -11,7 +11,7 @@ For every input search patterns, script can calculate:
 
 Goals
 ---
-pplc-php is very simple script without optimizations for performance. General goal - quick and simple implementation of test task.
+pplc-php is very simple script without optimizations for performance and beautiful code. General goal - quick and simple implementation of the test task.
 pplc-php works slowly and may have problems with huge log files. 
 
 How to run
