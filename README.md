@@ -20,13 +20,13 @@ How to run
 
 Features
 ---
-1. pplc-php support different log files formats.
+pplc-php support different log files formats.
 
 Format patterns easy to define via $logformat variable in createReport.php:
 
 `$logformat='{timestamp} {source}[{process}]: at={log_level} method={http_method} path={http_path} host={http_host} fwd="{client_ip}" dyno={responding_dyno} connect={connection_time}ms service={processing_time}ms status={http_status} bytes={bytes_sent}';`
 
-2. Search Patterns defines via $SearchPatterns variable (createReport.php). Example:
+Search Patterns defines via $SearchPatterns variable (createReport.php). Example:
 ```
 $SearchPatterns = array(
     'GET /api/users/{user_id}/count_pending_messages',
@@ -38,7 +38,7 @@ $SearchPatterns = array(
 );
 ```
 
-3. Input log file and output report file can be difined in createReport.php file.
+Input log file and output report file can be difined in createReport.php file.
 `$PPLCParser->AnalyseLogFile("sample.log",$SearchPatterns,"report.txt");`
 
 Example of output:
