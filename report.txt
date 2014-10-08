@@ -1,22 +1,22 @@
 -------------------------------------
-Report generated: 2014-10-08 07:27:42
+Report generated: 2014-10-08 07:37:52
 -------------------------------------
 
 Pattern "GET /api/users/{user_id}/count_pending_messages"
-matched: 2430 times, average response time: 25.99670781893ms, median of response time: 15ms, mode of reponse time: 11ms, the most responded dyno: web.6
+matched: 2430 times, average response time: 25.99670781893ms, median of response time: 15ms, mode of reponse time: 11ms, the most responded dyno: web.2
 
 Pattern "GET /api/users/{user_id}/get_messages"
-matched: 652 times, average response time: 62.170245398773ms, median of response time: 32ms, mode of reponse time: 23ms, the most responded dyno: web.7
+matched: 652 times, average response time: 62.170245398773ms, median of response time: 32ms, mode of reponse time: 23ms, the most responded dyno: web.11
 
 Pattern "GET /api/users/{user_id}/get_friends_progress"
-matched: 1117 times, average response time: 111.89704565801ms, median of response time: 51ms, mode of reponse time: 35ms, the most responded dyno: web.10
+matched: 1117 times, average response time: 111.89704565801ms, median of response time: 51ms, mode of reponse time: 35ms, the most responded dyno: web.5
 
 Pattern "GET /api/users/{user_id}/get_friends_score"
-matched: 1533 times, average response time: 228.76516634051ms, median of response time: 143ms, mode of reponse time: 67ms, the most responded dyno: web.13
+matched: 1533 times, average response time: 228.76516634051ms, median of response time: 143ms, mode of reponse time: 67ms, the most responded dyno: web.7
 
 Pattern "POST /api/users/{user_id}"
-matched: 2036 times, average response time: 82.453831041257ms, median of response time: 46ms, mode of reponse time: 23ms, the most responded dyno: web.1
+matched: 2036 times, average response time: 82.453831041257ms, median of response time: 46ms, mode of reponse time: 23ms, the most responded dyno: web.11
 
 Pattern "GET /api/users/{user_id}"
-matched: 6293 times, average response time: 96.707611631972ms, median of response time: 36ms, mode of reponse time: 11ms, the most responded dyno: web.13
+matched: 6293 times, average response time: 96.707611631972ms, median of response time: 36ms, mode of reponse time: 11ms, the most responded dyno: web.8
 

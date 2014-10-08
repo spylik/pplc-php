@@ -110,7 +110,7 @@ Class PPLCParser {
 				foreach($this->LookingFor as $key=>$val){
 
 					// calculating average
-					asort($counted[$key]['responding_dyno']);
+					arsort($counted[$key]['responding_dyno']);
 					$counted[$key]['avgOfResponseTime']=array_sum($counted[$key]['response_time'])/count($counted[$key]['response_time']);
 					
 					// looking for ResponseTime median
