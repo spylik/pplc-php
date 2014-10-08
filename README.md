@@ -9,11 +9,20 @@ For every input search patterns, script can calculate:
 * The mean (average), median and mode of the response time (connect time + service time).
 * The "dyno" that responded the most.
 
+Goals
+---
+pplc-php is very simple script without optimizations for performance. General goal - quick and simple implementation of test task.
+pplc-php works slowly and may have problems with huge log files. 
+
+How to run
+---
+`php createReport.php`
+
 Features
 ---
 1. pplc-php support different log files formats.
 
-Format patterns is easy to define via $logformat variable in createReport.php:
+Format patterns easy to define via $logformat variable in createReport.php:
 
 `$logformat='{timestamp} {source}[{process}]: at={log_level} method={http_method} path={http_path} host={http_host} fwd="{client_ip}" dyno={responding_dyno} connect={connection_time}ms service={processing_time}ms status={http_status} bytes={bytes_sent}';`
 
@@ -31,11 +40,6 @@ $SearchPatterns = array(
 
 3. Output and input files can difines in createReport.php file.
 `$PPLCParser->AnalyseLogFile("sample.log",$SearchPatterns,"report.txt");`
-
-Goals
----
-pplc-php is very simple script without optimizations for performance. General goal - quick and simple implementation of test task.
-pplc-php works slowly and may have problems with huge log files. 
 
 Example of output:
 ---
