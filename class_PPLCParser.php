@@ -146,7 +146,7 @@ Class PPLCParser {
 	private function GetArrayMedian($array){
 		$count = count($array);
 		if($count>0){
-			asort($array);
+			sort($array, SORT_NUMERIC);
 			$middleIndex = floor($count / 2);
 			$median = $array[$middleIndex];
 			if ($count % 2 == 0) {
