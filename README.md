@@ -26,7 +26,8 @@ $SearchPatterns = array(
 	'GET /api/users/{user_id}/get_friends_score',
 	'POST /api/users/{user_id}',
 	'GET /api/users/{user_id}'
-);```
+);
+```
 
 3. Output and input files can difines in createReport.php file.
 `$PPLCParser->AnalyseLogFile("sample.log",$SearchPatterns,"report.txt");`
