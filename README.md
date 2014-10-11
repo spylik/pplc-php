@@ -11,7 +11,7 @@ For every input search patterns, script can calculate:
 
 pplc have implementations in others languages:
 
-https://github.com/spylik/pplc-php (PHP)
+https://github.com/spylik/pplc-shell (Shell Scripting)
 
 https://github.com/spylik/pplc-erlang (Erlang)
 
