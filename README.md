@@ -1,13 +1,19 @@
 pplc-php
 ===
 
-pplc-php is very simple php impelentation to analyze heroku log files.
+pplc-php is very simple php script to analyze log files.
 
 For every input search patterns, script can calculate:
 
 * The amount of times the URL was called.
 * The mean (average), median and mode of the response time (connect time + service time).
 * The "dyno" that responded the most.
+
+pplc have implementations in others languages:
+
+https://github.com/spylik/pplc-php (PHP)
+
+https://github.com/spylik/pplc-erlang (Erlang)
 
 Goals
 ---
